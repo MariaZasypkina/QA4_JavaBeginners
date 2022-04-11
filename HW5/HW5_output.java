@@ -1,6 +1,8 @@
-package homework;
+package HW5;
 
-public class HW5_1 extends HW5 {
+import HW5.HW5_Methods;
+
+public class HW5_output extends HW5_Methods {
     public static void main(String[] args) {
         partNum(1);
         itemNum();

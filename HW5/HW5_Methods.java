@@ -1,5 +1,5 @@
-package homework;
-public class HW5 {
+package HW5;
+public class HW5_Methods {
     public static void partNum(int part) {
         System.out.println("--------------------");
         System.out.println("Part " + part);
