@@ -18,6 +18,11 @@ public class HW6_Methods {
         }
         num1++;
     }
+    public static void cicle(int start, int end, int step){
+        for (int i = start; i <= end; i = i + step) {
+            System.out.print(i + " ");
+        }
+    }
 
 
 
