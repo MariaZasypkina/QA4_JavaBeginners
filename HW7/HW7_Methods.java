@@ -1,4 +1,7 @@
 package HW7;
+
+import java.util.Arrays;
+
 public class HW7_Methods {
     public static void partNum(int part) {
         System.out.println("--------------------");
@@ -30,7 +33,19 @@ public class HW7_Methods {
             System.out.println("\u001B[31m" + "    FAILED" + "\u001B[0m");
         }
     }
+public static String arrMinMaxAv(int[]arr5){
+    Arrays.sort(arr5);
+    int min = arr5[0];
+    int max = arr5[arr5.length - 1];
+    int sum = 0;
+    for (int i = 0; i < arr5.length; i++){
+        sum += arr5[i];
+    }
+    int av = sum / arr5.length;
+    return min +"\t"+ max +"\t"+ av;
 
+
+}
 
 
 

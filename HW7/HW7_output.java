@@ -210,6 +210,14 @@ itemNum();
         System.out.println(Arrays.toString(arr4));
 partNum(3);
 itemNum();
+System.out.println();
+/*21. Создать метод, который принимает на вход массив int,  и возвращает минимальное
+значение, максимальное значение и среднее значение всех чисел массива.
+Проверить работу метода на массиве из задания 20.*/
+int [] arr5 = {56, 23, 98, 12, 3, 99};
+System.out.println(arrMinMaxAv(arr5));
+System.out.println(arrMinMaxAv(arr4));
+
 
 
 
