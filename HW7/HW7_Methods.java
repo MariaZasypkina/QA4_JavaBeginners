@@ -14,7 +14,22 @@ public class HW7_Methods {
         }
         num1++;
     }
- // 6.
+ // 18.
+    public static int arrAv(int[]arr2){
+        int av = 0;
+        for(int i = 0; i < arr2.length; i++){
+            av += arr2[i];
+        }
+        av = av / arr2.length;
+        return av;
+    }
+    public static void verifyResult(int expectedResult, int actualResult) {
+        if (expectedResult == actualResult) {
+            System.out.println("\u001B[32m" + "    PASSED" + "\u001B[0m");
+        } else {
+            System.out.println("\u001B[31m" + "    FAILED" + "\u001B[0m");
+        }
+    }
 
 
 
