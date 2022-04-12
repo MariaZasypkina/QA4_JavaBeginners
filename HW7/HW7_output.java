@@ -154,8 +154,17 @@ if((i % 2 == 0) && (catAges[i] <= 3)){
     System.out.println(catsNames[i]);
 }}
 itemNum();
-/*17. */
+/*17. Создать массив четных положительных чисел, значения которых не больше 10. (заполняем значения с помощью цикла for)*/
+int [] arr1 = new int[10/2 +1];
+for (int i = 0; i < 10; i++) {
+        arr1[i] = i*2;
+    if (i*2 == 10) { break;}
+}
+        System.out.println(Arrays.toString(arr1));
+itemNum();
 
 
-} }
+
+
+}}
 
