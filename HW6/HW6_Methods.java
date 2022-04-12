@@ -42,7 +42,27 @@ public static void odd(int n, int m, int l){
         }
     }
 }
+public static void n2(int l, int n){
+    for (int i = n; i <= l; i = i + 1){
+        System.out.print(2 * i + " ");
+    }
+}
 
+public static void item20(double x){
+    double y = 0;
+    if (x < 0) {
+        y = x;
+    } else {
+        if ((x >= 0) && (x <=1.5)){
+            y = x + 1;
+        } else {
+            if (x > 1.5){
+                y = 2.5 * Math.pow(x, 3) + 6 * Math.pow(x, 2) - 30;
+            }
+        }
+    }
+    System.out.println(y);
+}
 
 
 
