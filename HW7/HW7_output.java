@@ -2,7 +2,9 @@ package HW7;
 
 import javax.swing.*;
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class HW7_output extends HW7_Methods {
     public static void main(String[] args) {
@@ -33,7 +35,7 @@ public class HW7_output extends HW7_Methods {
         System.out.println(Arrays.toString(catsColors));
         itemNum();
         /*4. Создать массив catsAges и заполнить его любыми значениями.*/
-        int[] catAges = new int[]{3, 7, 14, 1, 20, 7, 2, 2};
+        int[] catAges = new int[]{2, 3, 4, 1, 5, 6, 9, 10};
         System.out.println(Arrays.toString(catAges));
         itemNum();
         /*5. Создать массив isCatRed и заполнить его соответствующими значениями*/
@@ -178,7 +180,7 @@ public class HW7_output extends HW7_Methods {
 /*18. Написать метод, который принимает на вход массив int, и возвращает среднее значение.
 Проверить работу метода тестом, если параметр - массив catsAges */
         System.out.println(arrAv(new int[]{1, 2, 3, 4}));
-        System.out.println("Verify result:");
+        System.out.println("Verification result:");
         System.out.println(Arrays.toString(catAges));
         verifyResult(avAge, arrAv(catAges));
         itemNum();
@@ -214,15 +216,98 @@ System.out.println();
 /*21. Создать метод, который принимает на вход массив int,  и возвращает минимальное
 значение, максимальное значение и среднее значение всех чисел массива.
 Проверить работу метода на массиве из задания 20.*/
-int [] arr5 = {56, 23, 98, 12, 3, 99};
-System.out.println(arrMinMaxAv(arr5));
 System.out.println(arrMinMaxAv(arr4));
+Arrays.sort(arr4);
+        int sum = 0;
+        for (int i = 0; i < arr4.length; i++){
+            sum += arr4[i];
+        }
+        int av = sum / arr4.length;
+String str20 = arr4[0] +"\t"+ arr4[arr4.length - 1] +"\t"+ av;
+verifyStringResult( str20,arrMinMaxAv(arr4));
+itemNum();
+/*22. Создать массив четных чисел и массив нечетных чисел из
+элементов массива из задания 20.*/
+        ArrayList<Integer> even = new ArrayList<Integer>();
+        ArrayList<Integer> odd = new ArrayList<Integer>();
+        for (int i = 0; i < arr4.length; i++){
+            if(arr4[i] % 2 == 0) {
+                even.add(arr4[i]);
+            } else {
+                odd.add(arr4[i]);
+            }
+        }
+        System.out.println(even);
+        System.out.println(odd);
+itemNum();
+        System.out.println();
+/*23. Создать двумерный массив, который состоит из имен, возрастов, цветов котов:
+Распечатать все данные котов в коробках с четными индексами, используя двумерный массив.*/
+        String[][] cats = new String[8][3];
+        cats[0][0] = "Мурзик";
+        cats[0][1] = "2";
+        cats[0][2] = "Grey";
+        cats[1][0] = "Черномырдин";
+        cats[1][1] = "3";
+        cats[1][2] = "Black";
+        cats[2][0]= "Мурка";
+        cats[2][1]= "4";
+        cats[2][2]= "Grey";
+        cats[3][0] = "Васька";
+        cats[3][1] = "1";
+        cats[3][2] = "Brown";
+        cats[4][0] = "Рыжик";
+        cats[4][1] = "5";
+        cats[4][2] = "Red";
+        cats[5][0] = "Дымка";
+        cats[5][1] = "6";
+        cats[5][2] = "Grey";
+        cats[6][0] = "Патрик";
+        cats[6][1] = "9";
+        cats[6][2] = "Red";
+        cats[7][0] = "Зорро";
+        cats[7][1] = "10";
+        cats[7][2] = "Grey";
+ for (int i = 0; i < cats.length; i++){
+     if(i % 2 == 0){
+         System.out.println(Arrays.toString(cats[i]));
+     }
+ }
+itemNum();
+        System.out.println();
+ /*24. Создать двумерный массив целых случайных чисел от 1 до 10 размерности 4*8.*/
+        int [][] arr8 = new int[4][8];
+        for (int i = 0; i < arr8.length; i++){
+            for (int j = 0; j < arr8[i].length; j++){
+                arr8[i][j] = (int)Math.ceil(Math.random()*10);
+            }
+        }
+        System.out.println(Arrays.toString(arr8[0]));
+        System.out.println(Arrays.toString(arr8[1]));
+        System.out.println(Arrays.toString(arr8[2]));
+        System.out.println(Arrays.toString(arr8[3]));
+//        ver 2
+        for (int i = 0; i < arr8.length; ++i) {
+            for(int j = 0; j < arr8[i].length; ++j) {
+                System.out.print(arr8[i][j] + " ");
+            }
+        }
+        System.out.println();
+itemNum();
+/*25. Вывести сумму всех четных чисел массива из задания 24.*/
+        int sumEven = 0;
+        for (int i = 0; i < arr8.length; ++i) {
+            for(int j = 0; j < arr8[i].length; ++j) {
+                if (arr8[i][j] % 2 == 0) {
+                    sumEven += arr8[i][j];
+                }
+            }
+        }
+        System.out.print(sumEven);
 
 
-
-
-
-    }    }
+    }
+}
 
 
 

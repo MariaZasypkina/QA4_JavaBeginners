@@ -43,10 +43,15 @@ public static String arrMinMaxAv(int[]arr5){
     }
     int av = sum / arr5.length;
     return min +"\t"+ max +"\t"+ av;
-
-
-}
-
+    }
+    public static void verifyStringResult(String expectedResult, String actualResult) {
+            System.out.println("Verification result:");
+        if (expectedResult.equals(actualResult)) {
+            System.out.println("\u001B[32m" + "    PASSED" + "\u001B[0m");
+        } else {
+            System.out.println("\u001B[31m" + "    FAILED" + "\u001B[0m");
+        }
+    }
 
 
 
