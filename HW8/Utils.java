@@ -108,7 +108,26 @@ public static int [] negArr(int [] arr) {
     }
         return arr2;
 }
-//Написать метод, который принимает на вход масив целых чисел,  и возвращает массив значений true или false,
-// если числа больше 10
+//Написать метод, который принимает на вход масив целых чисел,  и возвращает массив
+// значений true или false, если числа больше 10
 
+    public static boolean [] moreThanTen(int [] arr){
+        boolean [] arr1 = new boolean[arr.length];
+        for (int i = 0; i < arr.length; i++){
+                arr1[i] = arr[i] > 10;
+            }
+        return arr1;
+    }
+//Написать метод, который принимает на вход массив слов,  и возвращает
+// строку, состоящую из этих слов
+
+    public static String arrToStringMethod(String[]array){
+        String arrToString = "";
+        for(int i = 0; i < array.length; i++){
+            arrToString += array[i] + " ";
+        }
+        return arrToString;
+    }
+//15.Написать метод, который принимает массив целых чисел и считает
+// сумму чисел во второй половине массива
 }

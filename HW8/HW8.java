@@ -57,6 +57,15 @@ partNum(2);
 itemNum();
 //Написать метод, который принимает на вход масив целых чисел,  и возвращает массив значений true или false,
 // если числа больше 10
+        System.out.println(Arrays.toString(moreThanTen(arr)));
+
+itemNum();
+//Написать метод, который принимает на вход массив слов,
+// и возвращает строку, состоящую из этих слов
+        String [] array = {"mama", "papa", "deti", "babushka", "dedushka"};
+        System.out.println(arrToStringMethod(array));
+
+
 
     }
 }
