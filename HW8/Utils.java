@@ -98,7 +98,6 @@ public static int [] negArr(int [] arr) {
                   arr1[i] = arr[i];
                   count += 1;
                 }
-                System.out.println(Arrays.toString(arr1));
             }
         int [] arr2 = new int[count];
             for (int i = 0, j = 0; i < arr1.length; i++){
@@ -109,5 +108,7 @@ public static int [] negArr(int [] arr) {
     }
         return arr2;
 }
+//Написать метод, который принимает на вход масив целых чисел,  и возвращает массив значений true или false,
+// если числа больше 10
 
 }
