@@ -26,11 +26,11 @@ public class HW8 {
         String c2 = new String(HW8_1.c);
 
         System.out.println();
-        System.out.println("HW8 " + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "| HW8_1 " + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "| areEquals?");
+        System.out.println("HW8 " + "\t".repeat(5) + "| HW8_1 " + "\t".repeat(6) + "| areEquals?");
         System.out.println("________________________________________________________________________");
-        System.out.println("Integer a = " + HW8_1.a + "\t" + "\t" + "\t" + "\t" + "| Integer a2 = " + a2 + "\t" + "\t" + "\t" + "\t" + "| " + a.equals(a2));
-        System.out.println("Double b = " + HW8_1.b + "\t" + "\t" + "\t" + "| Double b2 = " + b2 + "\t" + "\t" + "\t" + "\t" + "| " + b.equals(b2));
-        System.out.println("String c = " + HW8_1.c + "\t" + "\t" + "\t" + "| String c2 = " + c2 + "\t" + "\t" + "\t" + "| " + c.equals(c2));
+        System.out.println("Integer a = " + HW8_1.a + "\t".repeat(4) + "| Integer a2 = " + a2 + "\t".repeat(4) + "| " + a.equals(a2));
+        System.out.println("Double b = " + HW8_1.b + "\t".repeat(3) + "| Double b2 = " + b2 + "\t".repeat(4) + "| " + b.equals(b2));
+        System.out.println("String c = " + HW8_1.c + "\t".repeat(3)+ "| String c2 = " + c2 + "\t".repeat(3)+ "| " + c.equals(c2));
 
         itemNum();
 //Написать метод, который принимает на вход 5 целых чисел,  и возвращает массив из этих же чисел
@@ -64,7 +64,41 @@ itemNum();
 // и возвращает строку, состоящую из этих слов
         String [] array = {"mama", "papa", "deti", "babushka", "dedushka"};
         System.out.println(arrToStringMethod(array));
-
+itemNum();
+//15.Написать метод, который принимает массив целых чисел и считает
+// сумму чисел во второй половине массива
+        System.out.println(Arrays.toString(arr));
+        System.out.println(secondPartSum(arr));
+itemNum();
+//Написать метод, который принимает на вход целое положительные число в пределах от 1 до 10 исключительно, и возвращает таблицу умножения на это число в виде массива
+//Например, метод(2) -> {0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20}
+        System.out.println(Arrays.toString(multiScore(3)));
+        int [] arr2 = {0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30};
+        System.out.println("--------->" + Arrays.toString(arr2));
+        verifyResultArray(multiScore(3), arr2);
+itemNum();
+//17. Написать метод, который принимает массив целых чисел и возвращает массив четных чисел, если четных чисел больше, или массив нечетных чисел, если нечетных чисел больше.
+System.out.println(Arrays.toString(oddOrEvenArray(arr2)));
+int [] test = {0, 6, 12, 18, 24, 30};
+verifyResultArray(test, oddOrEvenArray(arr2));
+itemNum();
+//18.Написать метод, который принимает на вход длину
+// массива и генерирует массив случаейных положительных
+// чисел от 0 до 100 исключительно.
+System.out.println(Arrays.toString(randomArr(25)));
+itemNum();
+//19.Написать метод, который принимает на вход длину
+// массива l и количество знаков d (однозначные,
+// двузначные, трехзначные и тд числа), и генерирует
+// массив случайных целых положительных чисел длины l,
+// в котором все числа имеют количество знаков d
+System.out.println(Arrays.toString(randomArr2(25, 3)));
+itemNum();
+//20.Написать метод, который принимает на вход массив целых
+// положительных чисел, и возвращает массив только
+// двузначных чисел. ПРоверить работу метода на массиве
+// из задания 18.
+        System.out.println(Arrays.toString(twoDigitsArr(randomArr(5))));
 
 
     }
