@@ -261,8 +261,42 @@ int [] arr1 = new int[count];
             }
         return arr1;
 }
+//21.Написать метод, который принимает на вход массив целых положительных двузначных
+// чисел, и возвращает массив разниц между десятками и единицами
+    public static int [] difArr(int [] arr){
+        int [] arr1 = new int[arr.length];
+        for (int i = 0; i < arr.length; i++){
+            String a = Integer.toString(arr[i]);
+        arr1[i] = Integer.valueOf(a.charAt(0)) - Integer.valueOf(a.charAt(1));
+        }
+        return arr1;
+    }
+//22.Написать метод, который принимает массив из 11 целых положительных чисел от 0
+// до 9, и возвращает массив, который содержит номер телефона, состоящий из этих
+// чисел,  и название страны, которой номер принадлежит. //Например:
+//method({1, 8, 0, 0, 1, 2, 3, 4, 5, 6, 7}) -> {“1(800)123-45-67”, “USA”}
 
 
 
+//23.Написать метод, который принимает массив целых положительных чисел больше 0, и
+//возвращает массив уникальных чисел.
+public static int [] unicNum(int [] arr){
+       int count = 0;
+       Arrays.sort(arr);
+    System.out.println(Arrays.toString(arr));
+    for (int i = 0, j = i+1; i < arr.length; i++) {
+            if (arr[i] == arr[j]) {
+                count +=1;
+                j++;
+       }}
+        int [] arr1 = new int[count];
+    for (int i = 0; i < arr.length; i++) {
+        for (int j = i + 1 ; j < arr.length; j++) {
+            if (arr[i] != arr[j]) {
+                arr1[i] = arr[i];
+                j++;
+            }}}
+        return arr1;
+}
 
 }
