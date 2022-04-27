@@ -296,8 +296,7 @@ public static int [] unicNum(int [] arr){
                 arr1[i] = arr[i];
                 j++;
             }
-        }
-    }
+        }}
         return arr1;
 }
 
