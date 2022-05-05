@@ -55,35 +55,29 @@ public class Utils {
     }
     public static void methodInt(int d, int e, int f, int g, int h){
         int[] arr = new int[5];
-        for (int i = 0; i < 5; i++) {
             arr[0] = d;
             arr[1] = e;
             arr[2] = f;
             arr[3] = g;
             arr[4] = h;
-        }
         System.out.println(Arrays.toString(arr));
     }
     public static void methodD(double d, double e, double f, double g, double h){
         double[] arr1 = new double[5];
-        for (int i = 0; i < 5; i++) {
             arr1[0] = d;
             arr1[1] = e;
             arr1[2] = f;
             arr1[3] = g;
             arr1[4] = h;
-        }
         System.out.println(Arrays.toString(arr1));
     }
     public static void methodS(String a, String b, String c, String d, String e){
         String [] arr1 = new String[5];
-        for (int i = 0; i < 5; i++){
             arr1[0] = a;
             arr1[1] = b;
             arr1[2] = c;
             arr1[3] = d;
             arr1[4] = e;
-        }
         System.out.println(Arrays.toString(arr1));
     }
     //Написать метод, который принимает на вход массив целых чисел,  и возвращает массив тех же чисел, умноженных на 2.5
