@@ -261,7 +261,7 @@ int [] arr1 = new int[count];
         int [] arr1 = new int[arr.length];
         for (int i = 0; i < arr.length; i++){
             String a = Integer.toString(arr[i]);
-        arr1[i] = Integer.valueOf(a.charAt(0)) - Integer.valueOf(a.charAt(1));
+        arr1[i] = (int) a.charAt(0) - (int) a.charAt(1);
         }
         return arr1;
     }
