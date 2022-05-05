@@ -19,6 +19,10 @@ public class Utils {
         num1++;
     }
 
+    public static void testNum(int testNumber){
+        System.out.println("\n" + "Test "+ testNumber);
+    }
+//1
     public void stringMethods1(String string){
         String result = "";
         if (string.isEmpty()){
@@ -34,13 +38,54 @@ public class Utils {
         System.out.println(result);
         System.out.println(string.trim());
     }
+//2
+    public void RemoveAllaAlgorithm(String str){
+        String result = "";
+        if(str.isEmpty()){
+            result = "The String is Empty";
 
-    public static void main(String[] args) {
-        Utils str1 = new Utils();
-        String string = "        Life is amazing!  ";
-        str1.stringMethods1(string);
-
+        } else {
+            result = str.replace("a", "");
+        }
+        System.out.println(result);
+    }
+//3
+    public void RemoveAllZerosAlgorithm(String a){
+        String result = "";
+        if(a.isEmpty()){
+            result = "The String is Empty";
+        } else {
+            result = a.replace(" ", "").replace("0", "");
+        }
+        System.out.println(result);
+    }
+//4
+    public void RemoveAllSpaces(String a){
+        String result = "";
+        if(a.isEmpty()){
+            result = "The String is Empty";
+        } else {
+            result = a.replace(" ", "");
+        }
+        System.out.println(result);
     }
 
+//5
 
+    public void HowManyA(String a){
+        int count = 0;
+        a = a.toLowerCase();
+        for(int i = 0; i < a.length(); i++){
+            if(a.charAt(i) == 'a'){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+//6
+
+    public void isJavaWordThere(String a){
+        System.out.println(a.contains("Java"));
+    }
 }
