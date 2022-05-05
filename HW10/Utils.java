@@ -88,4 +88,12 @@ public class Utils {
     public void isJavaWordThere(String a){
         System.out.println(a.contains("Java"));
     }
+
+//7
+   public void concatMethod(String a){
+        String str1 = "\"";
+        String str2 = ".\"";
+       System.out.println(str1.concat(a).concat(str2));
+   }
+
 }

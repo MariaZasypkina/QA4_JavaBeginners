@@ -92,7 +92,17 @@ public class HW10_1 extends Utils {
                 "Or any of these all, or all, or more, " +
                 "Entitled in thy parts do crownèd sit";
         utils.isJavaWordThere(e2);
+//7
 
+        itemNum();
+
+        testNum(1);
+        String f = "\"One\"";
+        utils.concatMethod(f);
+
+        testNum(2);
+        String f1 = "One";
+        utils.concatMethod(f1);
 
     }
 }
