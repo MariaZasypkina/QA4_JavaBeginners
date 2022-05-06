@@ -1,5 +1,7 @@
 package HW10;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class HW10_1 extends Utils {
     public static void main(String[] args) {
         Utils utils = new Utils();
@@ -103,6 +105,109 @@ public class HW10_1 extends Utils {
         testNum(2);
         String f1 = "One";
         utils.concatMethod(f1);
+
+        testNum(3);
+        String f2 = "  TWO  ";
+        utils.concatMethod(f2);
+
+//8
+        itemNum();
+
+        testNum(1);
+        String g = "ташкент";
+        utils.correctCityName(g);
+
+        testNum(2);
+        String g1 = "ЧикаГО";
+        utils.correctCityName(g1);
+
+//9
+        itemNum();
+
+        testNum(1);
+        String h = "Abracadabra";
+        String h1 = "b";
+        utils.whatInBetweenMethod(h, h1);
+
+        testNum(2);
+        String h2 = "Whippersnapper";
+        String h3 = "p";
+        utils.whatInBetweenMethod(h2, h3);
+
+//10
+        itemNum();
+
+        testNum(1);
+        String k = "Abracadabra";
+        utils.sameBeginningEndLetter(k);
+
+        testNum(2);
+        String k1 = "Whippersnapper";
+        utils.sameBeginningEndLetter(k1);
+
+//11
+
+        itemNum();
+
+        testNum(1);
+        String l = "QA for Everyone";
+        utils.fromStringToArray(l);
+
+        testNum(2);
+        String l1 = "Life is a beautiful thing";
+        utils.fromStringToArray(l1);
+
+//12
+        itemNum();
+
+        testNum(1);
+        String m = "Александр Сергеевич Пушкин";
+        utils.fullNameToArray(m);
+
+        testNum(2);
+        String m1 = "Мария Сергеевна Засыпкина";
+        utils.fullNameToArray(m1);
+
+//13
+
+        itemNum();
+
+        testNum(1);
+        String n = "abc";
+        System.out.println(utils.sumOfLetters(n));
+
+        testNum(2);
+        String n1 = "ABC";
+        System.out.println(utils.sumOfLetters(n1));
+
+        testNum(3);
+        String n2 = "123";
+        System.out.println(utils.sumOfLetters(n2));
+
+//14
+        itemNum();
+
+        testNum(1); //method(“a”, “m”) → true
+        String o = "a";
+        String o1 = "m";
+        String o2 = "method";
+        utils.letterGoesFirst(o2, o, o1);
+
+        testNum(2); // method(“m”, “l”) → false
+        String o3 = "m";
+        String o4 = "l";
+        String o5 = "method";
+        utils.letterGoesFirst(o2, o, o1);
+
+        partNum(2);
+//15
+        itemNum(); //Test Data: “1, 2, 3, 4, 5” → {1, 2, 3, 4, 5}
+        String p = "1, 2, 3, 4, 5";
+        utils.StringToNumbers(p);
+
+
+
+
 
     }
 }
