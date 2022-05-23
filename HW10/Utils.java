@@ -4,6 +4,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 
+import static java.lang.Integer.parseInt;
+
 public class Utils {
 
     public static void partNum(int part) {
@@ -160,37 +162,20 @@ public class Utils {
         for (int i = 0; i < a.length(); i++) {
             if (a.charAt(i) < '0' || a.charAt(i) > '9') {
                 sum += a.charAt(i);
-                result = sum +"";
-        } else {
+                result = sum + "";
+            } else {
                 result = "Это не буквы";
+            }
         }
-    }
         return result;
-}
-
-//14
-    public void letterGoesFirst(String c, String a, String b){
-
-        if (c.contains(a) && (c.contains(b))) {
-            System.out.println(c.indexOf(a) < c.indexOf(b));
-        } else {
-            System.out.println(false);
-        }
+    }
+    //14
+    public void letterGoesFirst(char a, char b) {
+        System.out.println(a < b);
     }
 
 //15
 
-    public void StringToNumbers(String a){
-
-//        System.out.println(Arrays.toString(a.split(",")));
-        int [] arr = new int[a.length()];
-        for (int i = 0; i < arr.length; i++){
-                if (a.charAt(i) >= '0' || a.charAt(i) <= '9') {
-                    arr[i] = a.charAt(i);
-        } else {
-                arr = {};
-                }
-        }
-
+    public int[] StringToNumbers(String a) {
     }
 }

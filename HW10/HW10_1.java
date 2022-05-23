@@ -2,6 +2,8 @@ package HW10;
 
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.Arrays;
+
 public class HW10_1 extends Utils {
     public static void main(String[] args) {
         Utils utils = new Utils();
@@ -188,22 +190,20 @@ public class HW10_1 extends Utils {
         itemNum();
 
         testNum(1); //method(“a”, “m”) → true
-        String o = "a";
-        String o1 = "m";
-        String o2 = "method";
-        utils.letterGoesFirst(o2, o, o1);
+        char o = 'a';
+        char o1 = 'm';
+        utils.letterGoesFirst(o, o1);
 
         testNum(2); // method(“m”, “l”) → false
-        String o3 = "m";
-        String o4 = "l";
-        String o5 = "method";
-        utils.letterGoesFirst(o2, o, o1);
+        char o3 = 'm';
+        char o4 = 'l';
+        utils.letterGoesFirst(o, o1);
 
         partNum(2);
 //15
-        itemNum(); //Test Data: “1, 2, 3, 4, 5” → {1, 2, 3, 4, 5}
-        String p = "1, 2, 3, 4, 5";
-        utils.StringToNumbers(p);
+//        itemNum(); //Test Data: “1, 2, 3, 4, 5” → {1, 2, 3, 4, 5}
+//        String p = "1, 2, 3, 4, 5";
+//        System.out.println(Arrays.toString(utils.StringToNumbers(p)));
 
 
 
